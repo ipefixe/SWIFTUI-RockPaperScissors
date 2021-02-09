@@ -82,11 +82,7 @@ struct ContentView: View {
     }
     
     func updateUI() {
-        if isWin {
-            color = .green
-        } else {
-            color = .red
-        }
+        color = isWin ? .green : .red
     }
     
     func newRound() {
